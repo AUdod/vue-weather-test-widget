@@ -1,6 +1,6 @@
   
   // Тип для страниц. Предполагает что количество значений будет ограничено.
-export type Page = "main" | "weekly";
+  export type Page = "main" | "weekly";
 
 
   
