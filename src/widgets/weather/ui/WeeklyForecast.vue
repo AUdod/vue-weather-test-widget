@@ -32,6 +32,7 @@ defineProps<{
 .days-container {
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
   gap: 1.25rem;
 }
 

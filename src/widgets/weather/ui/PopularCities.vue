@@ -59,7 +59,7 @@ defineEmits<{
 
 .cities-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   justify-content: space-between;
   overflow-x: auto;
   gap: 2.25rem;
@@ -129,29 +129,5 @@ defineEmits<{
 .humidity {
   opacity: 0.8;
   text-wrap: nowrap;
-}
-
-@media (max-width: 1200px) {
-  .cities-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 992px) {
-  .cities-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .cities-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .cities-grid {
-    grid-template-columns: 1fr;
-  }
 }
 </style>
